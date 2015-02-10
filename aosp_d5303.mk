@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_PREBUILT_KERNEL := kernel
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/$(TARGET_PREBUILT_KERNEL):kernel
+TARGET_KERNEL_CONFIG := aosp_yukon_tianchi_defconfig
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 
 # backlight brightness below 127 is useless
 # use 127-255 as brightness range.
@@ -38,8 +38,7 @@ PRODUCT_COPY_FILES += \
     device/sony/tianchi/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/sony/tianchi/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     device/sony/tianchi/rootdir/init.yukon.dev.rc:root/init.yukon.dev.rc \
-    device/sony/tianchi/rootdir/fstab.yukon:root/fstab.yukon \
-    device/sony/tianchi/rootdir/logo.rle:root/logo.rle
+    device/sony/tianchi/rootdir/fstab.yukon:root/fstab.yukon
 
 PRODUCT_PACKAGES += \
     keystore.msm8226
