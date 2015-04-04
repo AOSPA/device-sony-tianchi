@@ -22,4 +22,3 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 5112822784
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/sony/tianchi/rootdir/fstab.yukon
-
